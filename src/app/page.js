@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-   <main className="w-full min-h-screen bg-gray-100">
+   <div>
+   <p className="text-center text-5xl">FoodieGo-Application</p>
    <HeroSection></HeroSection>
-   </main>
-   
+   </div>
   );
 }

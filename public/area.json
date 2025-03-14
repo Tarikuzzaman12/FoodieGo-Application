@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "area": "Dhanmondi",
+      "image": "https://live.staticflickr.com/8557/8700699303_40ecfb33d3_z.jpg",
+      "restaurants": 25
+    },
+    {
+      "id": 2,
+      "area": "Uttara",
+      "image": "https://propertyguide.com.bd/_next/image?url=https%3A%2F%2Fpropertyguide-store.s3.ap-southeast-1.amazonaws.com%2Fbikroy%2FUttara_Dhaka_2_4692c33337.jpeg&w=3840&q=75",
+      "restaurants": 30
+    },
+    {
+      "id": 3,
+      "area": "Mirpur",
+      "image": "https://thumbs.dreamstime.com/b/mirpur-dhaka-bangladesh-new-tall-building-city-evening-sky-background-street-front-traffic-buildings-274262586.jpg",
+      "restaurants": 28
+    },
+    {
+      "id": 4,
+      "area": "Mohammadpur",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyWndSPl2X6xRjSmxJeEfcBqhiV7tntf0t3A&s",
+      "restaurants": 20
+    },
+    {
+      "id": 5,
+      "area": "Banani",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGr_CyO2uLTdN1a8GCA7LROe1NSz0_0h4RYg&s",
+      "restaurants": 22
+    },
+    {
+      "id": 6,
+      "area": "Gulshan",
+      "image": "https://mediaim.expedia.com/destination/2/228e9171e12d45e6970d469eeed2d743.jpg",
+      "restaurants": 35
+    },
+    {
+      "id": 7,
+      "area": "Bashundhara",
+      "image": "https://www.bashundharahousing.com/api/assets/Bashundhara%20Residential%20Area%20four.jpeg",
+      "restaurants": 26
+    },
+    {
+      "id": 8,
+      "area": "Mohakhali",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Colorful_Mohakhali_Flyover.jpg/1200px-Colorful_Mohakhali_Flyover.jpg",
+      "restaurants": 14
+    },
+    {
+      "id": 9,
+      "area": "Shyamoli",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtfJNQDj7G1URrHEOfzxRX1IyUu6pv0BFbvg&s",
+      "restaurants": 15
+    },
+    {
+      "id": 10,
+      "area": "Motijheel",
+      "image": "https://en.banglapedia.org/images/d/d0/MotijheelComercialArea.jpg",
+      "restaurants": 20
+    },
+    {
+      "id": 11,
+      "area": "Banasree",
+      "image": "https://propertyguide.com.bd/_next/image?url=https%3A%2F%2Fpropertyguide-store.s3.ap-southeast-1.amazonaws.com%2Fbikroy%2Fmedium_Banasee_U_Loop_Chattar_8027c7564b.jpg&w=3840&q=75",
+      "restaurants": 19
+    },
+    {
+      "id": 12,
+      "area": "Paltan",
+      "image": "https://propertyguide.com.bd/_next/image?url=https%3A%2F%2Fpropertyguide-store.s3.ap-southeast-1.amazonaws.com%2Fbikroy%2FAZ_Mor_paltan_1ca6ee37ea.jpg&w=3840&q=75",
+      "restaurants": 16
+    },
+    {
+      "id": 13,
+      "area": "Malibagh",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Darul_Uloom_Deoband.jpg/640px-Darul_Uloom_Deoband.jpg",
+      "restaurants": 10
+    },
+    {
+      "id": 14,
+      "area": "Jatrabari",
+      "image": "https://heidelbergmaterialsbd.com/storage/app/uploads/public/637/de4/95b/thumb_413_1600_873_0_0_crop.jpg",
+      "restaurants": 12
+    },
+    {
+      "id": 15,
+      "area": "Tejgaon",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%E0%A6%AB%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%97%E0%A7%87%E0%A6%9F_%E0%A6%8F%E0%A6%B2%E0%A6%BE%E0%A6%95%E0%A6%BE.JPG/220px-%E0%A6%AB%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%97%E0%A7%87%E0%A6%9F_%E0%A6%8F%E0%A6%B2%E0%A6%BE%E0%A6%95%E0%A6%BE.JPG",
+      "restaurants": 21
+    }
+  ]
+  

@@ -1,9 +1,12 @@
+
+import HeroSection from "@/components/HeroSection";
 import Image from "next/image";
 
 export default function Home() {
   return (
-   <div>
-   <p className="text-center text-5xl">FoodieGo-Application</p>
-   </div>
+   <main className="w-full min-h-screen bg-gray-100">
+   <HeroSection></HeroSection>
+   </main>
+   
   );
 }

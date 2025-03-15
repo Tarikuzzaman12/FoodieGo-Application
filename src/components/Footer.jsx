@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            <footer className=" pt-10 bg-white text-black font-medium ">
+            <footer className=" pt-10 bg-amber-300 text-black font-medium ">
           <h2 className="text-2xl text-black font-bold text-center">Payment </h2>
           <div className="grid lg:grid-cols-3 gap-6 items-center w-2/12 mx-auto ">
             <img className="w-16  " src="https://i.ibb.co.com/TpKZw19/Bkash-Logo-500x281.png"></img>
@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
             <div className="flex mx-auto ">
               <div>
-              <img className="w-16 " src="https://i.ibb.co.com/GvcGk5c7/google-play-logo.png"></img>
+              <img className="w-16  " src="https://i.ibb.co.com/GvcGk5c7/google-play-logo.png"></img>
               <h4 className="text-xl font-bold">google play</h4>
               
               </div>

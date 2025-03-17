@@ -1,12 +1,13 @@
-
 "use client";
 
+import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaHeart, FaShoppingCart, FaBars, FaTimes, FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { data: session, status } = useSession()
 
   return (
     <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white shadow-sm">
@@ -110,11 +111,18 @@ const Navbar = () => {
             </div>
 
             {/* Signin Button */}
-            <Link href="/login">
-              <button className="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition duration-300">
-                Signin
+            {status == 'authenticated' ? <>
+              <button onClick={() => signOut()} className="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition duration-300">
+                Logout
               </button>
-            </Link>
+            </> : <>
+              <Link href="/login">
+                <button className="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition duration-300">
+                  Signin
+                </button>
+              </Link>
+            </>}
+
           </div>
         </div>
 

@@ -2,22 +2,34 @@
 import React from 'react'
 import { signIn } from "next-auth/react"
 import Swal from 'sweetalert2'
+import { useRouter } from 'next/navigation'
 
 function LoginForm() {
+    const router = useRouter()
     const handleLoginSubmit = async(e) => {
         e.preventDefault()
         const form = e.target
         const email = form.email.value
         const password = form.password.value
         try{
-            await signIn("credentials", { email, password, callbackUrl: '/' })
-            Swal.fire({
-                position: "top-end",
-                icon: "success",
-                title: "Login successfully",
-                showConfirmButton: false,
-                timer: 1500
-              });
+            const response = await signIn("credentials", { email, password, callbackUrl: '/', redirect: false })
+            if(response.ok){
+                router.push('/')
+                form.reset()
+                Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "Login successfully",
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
+            }else{
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Authentication failed",
+                  });
+            }
         }catch(e){
             console.log(e.message);
         }

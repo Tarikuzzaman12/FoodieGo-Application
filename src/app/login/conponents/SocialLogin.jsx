@@ -1,11 +1,29 @@
-import { signIn } from 'next-auth/react'
-import React from 'react'
+"use client"
+import { signIn, useSession } from 'next-auth/react'
+import { useRouter } from 'next/navigation'
+import React, { useEffect } from 'react'
+import Swal from 'sweetalert2'
 
 export default function () {
-    const handleSocialLogin = async(providerName) => {
-        const result = await signIn(providerName, {redirect: false})
-        console.log(result);
+    const session = useSession()
+    const router = useRouter()
+    const handleSocialLogin = (providerName) => {
+        signIn(providerName)
     }
+
+    useEffect(() => {
+        if(session?.status == "authenticated"){
+            router.push('/')
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Google login successfully",
+                showConfirmButton: false,
+                timer: 1500
+              });
+        }
+    }, [session?.status])
+
     return (
         <div>
             <div className="mt-4">

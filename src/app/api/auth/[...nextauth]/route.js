@@ -1,3 +1,4 @@
+import { loginUser } from "@/app/action/auth/loginUser";
 import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google";
@@ -18,8 +19,8 @@ const handler = NextAuth({
       async authorize(credentials, req) {
         console.log(credentials);
         // Add logic here to look up the user from the credentials supplied
-        const user = { id: "1", name: "J Smith", email: "jsmith@example.com" }
-
+        const user = await loginUser(credentials)
+        console.log(user);
         if (user) {
           // Any object returned will be saved in `user` property of the JWT
           return user

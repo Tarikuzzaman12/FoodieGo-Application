@@ -24,8 +24,9 @@ if (process.env.NODE_ENV === "development") {
 }
 
 export default async function dbConnect(collectionName) {
-    const client = await clientPromise;
-    return client.db(process.env.DB_NAME).collection(collectionName);
+    const client = await clientPromise; // Await client promise
+    const db = client.db(process.env.DB_NAME);  // Get the DB connection
+    return db.collection(collectionName); // Return the collection object
 }
 
 export const collectionNameObj = {

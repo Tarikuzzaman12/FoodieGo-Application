@@ -12,6 +12,7 @@ export default function Signin() {
               placeholder="Enter your email"
             />
           </div>
+          
           <div>
             <label className="block text-gray-700">Password</label>
             <input

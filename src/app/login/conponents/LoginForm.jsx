@@ -13,6 +13,7 @@ function LoginForm() {
         const password = form.password.value
         try{
             const response = await signIn("credentials", { email, password, callbackUrl: '/', redirect: false })
+            console.log(response);
             if(response.ok){
                 router.push('/')
                 form.reset()

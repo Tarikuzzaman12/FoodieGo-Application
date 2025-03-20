@@ -1,3 +1,8 @@
+"use client"
+
+import LoginForm from "./conponents/LoginForm";
+import SocialLogin from "./conponents/SocialLogin";
+
 export default function Signin() {
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">
@@ -29,13 +34,9 @@ export default function Signin() {
           </button>
         </form>
 
+        <LoginForm></LoginForm>
         {/* Google Sign In Button */}
-        <div className="mt-4">
-          <button className="w-full flex items-center justify-center gap-2 border border-gray-400 py-2 rounded-lg hover:bg-gray-200 transition">
-            <span>Sign in with Google</span>
-          </button>
-        </div>
-
+        <SocialLogin></SocialLogin>
         <p className="text-center text-gray-600 mt-4">
           Don't have an account?{" "}
           <a href="/signup" className="text-blue-500 hover:underline">
@@ -44,5 +45,6 @@ export default function Signin() {
         </p>
       </div>
     </div>
+    
   );
 }

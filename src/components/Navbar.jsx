@@ -30,7 +30,7 @@ const Navbar = () => {
               href="/"
               className="text-2xl font-bold text-gray-800 hover:text-yellow-600 transition duration-300"
             >
-              FoodDelivery
+              FoodiGo
             </a>
           </div>
 

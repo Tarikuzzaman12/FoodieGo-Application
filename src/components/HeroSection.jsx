@@ -1,4 +1,4 @@
-"use client"; // Required for Swiper in Next.js App Router
+"use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
@@ -25,7 +25,7 @@ const HeroSection = () => {
         loop={true}
         pagination={{ clickable: true }}
         navigation
-        className="w-full h-[700px]"
+        className="w-full h-[450px]"
       >
         {images.map((img, index) => (
           <SwiperSlide key={index} className="flex justify-center items-center">

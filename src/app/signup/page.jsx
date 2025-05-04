@@ -47,7 +47,7 @@ export default function Signup() {
           {/* Google Sign Up Button */}
           <div className="mt-4">
             <button className="w-full flex items-center justify-center gap-2 border border-gray-400 py-2 rounded-lg hover:bg-gray-200 transition">
-              <span>Sign up with Google</span>
+              <span>Sign Up with Google</span>
             </button>
           </div>
   
